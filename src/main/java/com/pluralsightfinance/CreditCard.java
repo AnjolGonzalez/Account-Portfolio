@@ -11,10 +11,11 @@ public class CreditCard implements Valuable{
         this.balance = balance;
     }
 
-    public void charge(double chargeTotal) {
-
+    public void charge(double chargeAmount) {
+        balance += chargeAmount;
     }
-    public void pay(double payTotal) {
+    public void pay(double payAmount) {
+        balance -= payAmount;
 
     }
     public double getValue() {
